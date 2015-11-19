@@ -1,0 +1,17 @@
+import java.util.Random;
+
+public class DiceGame {
+
+	private int Number;
+	
+	public int Throw()
+	{
+		Random number = new Random();
+		Number = number.nextInt(6)+1;
+		return Number;
+	}
+	public int Value()
+	{
+		return Number;
+	}
+}
